@@ -1,6 +1,6 @@
 import com.sun.security.ntlm.Client;
 import org.jgroups.*;
-
+import org.jgroups.blocks.MessageDispatcher;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.HashMap;
@@ -11,9 +11,7 @@ import java.util.TimerTask;
 public class Watcher extends ReceiverAdapter {
     JChannel channel;
     String user_name="PC1";
-    public class Ahmet {
 
-    }
 
     Map<Address, Boolean> clients = new HashMap<org.jgroups.Address, Boolean>();
 
@@ -73,7 +71,9 @@ public class Watcher extends ReceiverAdapter {
         System.out.println(msg.getSrc() + ": " + msg.getObject());
         System.out.println(clients);
 
+
         }
+
 
 
 
