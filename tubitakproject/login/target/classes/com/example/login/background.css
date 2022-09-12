@@ -1,0 +1,4 @@
+.vbox_background_image {
+    -fx-background-image: url("background.jpg");
+    -fx-background-position: center center;
+}

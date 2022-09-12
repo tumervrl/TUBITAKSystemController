@@ -13,7 +13,9 @@
         <module>client</module>
         <module>client2</module>
         <module>client3</module>
+        <module>login</module>
     </modules>
+
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

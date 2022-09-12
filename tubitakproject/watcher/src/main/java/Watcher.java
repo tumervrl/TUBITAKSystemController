@@ -37,6 +37,7 @@ public class Watcher extends ReceiverAdapter {
 
                 //channel.send(msg);
                 send(msg);
+
             }
             catch(Exception e) {
             }
@@ -44,6 +45,7 @@ public class Watcher extends ReceiverAdapter {
     }
     public void viewAccepted(View new_view) {
         System.out.println("** view: " + new_view);
+
 
     }
     public void send (Message msg) {
@@ -67,6 +69,7 @@ public class Watcher extends ReceiverAdapter {
        // System.out.println(clients);
         if (!clients.containsKey(msg.getObject())){
             clients.put(msg.getSrc(),true);
+
         }
         System.out.println(msg.getSrc() + ": " + msg.getObject());
         System.out.println(clients);

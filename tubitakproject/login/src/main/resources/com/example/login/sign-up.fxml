@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.SignUpController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.SignUpController">
    <children>
       <MenuBar VBox.vgrow="NEVER">
          <menus>
@@ -58,13 +58,13 @@
       </MenuBar>
       <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <BorderPane prefHeight="374.0" prefWidth="640.0" style="-fx-background-color: #FFFFFF;">
+            <BorderPane prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: #FFFFFF;" styleClass="vbox_background_image" stylesheets="@background.css">
                <left>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                      <children>
                         <ImageView fitHeight="266.0" fitWidth="208.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../images/indir.jpg" />
+                              <Image url="@../../../images/tubitak.png" />
                            </image>
                         </ImageView>
                         <Label layoutX="36.0" layoutY="208.0" prefHeight="146.0" prefWidth="136.0" text="RAYLI ULAŞIM TEKNOLOJİLERİ ENSTİTÜSÜ" textAlignment="CENTER" textFill="RED" wrapText="true">
@@ -88,8 +88,8 @@
                               <Font name="System Bold" size="12.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="username" layoutX="89.0" layoutY="139.0" />
-                        <PasswordField fx:id="password" layoutX="89.0" layoutY="182.0" />
+                        <TextField fx:id="username" layoutX="89.0" layoutY="139.0" promptText="username" />
+                        <PasswordField fx:id="password" layoutX="89.0" layoutY="182.0" promptText="password" />
                         <Button fx:id="buttonSignUp" layoutX="125.0" layoutY="237.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" text="SignUp" />
                         <Label fx:id="wrongLogIn" layoutX="113.0" layoutY="240.0" prefHeight="18.0" prefWidth="14.0" textFill="RED" />
                         <Button fx:id="buttonLogIn" layoutX="160.0" layoutY="321.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Log In" textFill="#0026ff" underline="true" />

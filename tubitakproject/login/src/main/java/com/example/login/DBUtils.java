@@ -58,7 +58,7 @@ public class DBUtils {
             if (resultSet.isBeforeFirst()) {
                 System.out.println("Kullanici kayitli.");
                 Alert alert = new Alert(Alert.AlertType.ERROR);
-                alert.setContentText("Bu kullanici adini kullanamazsiniz!");
+                alert.setContentText("Böyle bir kayit var !");
                 alert.show();
             } else {
                 psInsert = connection.prepareStatement("INSERT INTO admin (username, password) VALUES (?,?)");
