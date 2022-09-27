@@ -11,6 +11,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+//import org.example.watcher.Watcher3;
+
 import java.awt.*;
 
 
@@ -20,7 +22,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class HelloController implements Initializable {
+public class HelloController  implements Initializable {
     @FXML
     private Button cancelButton;
     @FXML
@@ -28,16 +30,14 @@ public class HelloController implements Initializable {
     @FXML
     private Button buttonRegister;
     @FXML
-    private TextField username;
+    public TextField username;
     @FXML
     private TextField password;
     @FXML
     private Hyperlink link;
-    public class Runner {
-        public static void main(String[] args) {
-            new Watcher2.A().fun();
-        }
-    }
+
+
+
 
 
 
@@ -56,6 +56,7 @@ public class HelloController implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 DBUtils.logInUser(event,username.getText(),password.getText());
+
             }
         });
 

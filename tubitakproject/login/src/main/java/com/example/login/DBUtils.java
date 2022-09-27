@@ -65,8 +65,11 @@ public class DBUtils {
                 psInsert.setString(1, username);
                 psInsert.setString(2, password);
                 psInsert.executeUpdate();
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setContentText("Kayıt Basariyla Olusturuldu.");
+                alert.show();
 
-                changeScene(event,"logged-in.fxml","Welcome!",username);
+                //changeScene(event,"logged-in.fxml","Welcome!",username);
 
 
             }
@@ -122,7 +125,8 @@ public class DBUtils {
                 while (resultSet.next()){
                     String retrievedPassword = resultSet.getString("password");
                     if (retrievedPassword.equals(password)) {
-                        changeScene(event,"logged-in.fxml","Welcome",username);
+                        changeScene(event,"logged-in.fxml","Control Panel",username);
+
                     } else {
                         System.out.println("Sifre Eslesmiyor!");
                         Alert alert = new Alert(Alert.AlertType.ERROR);

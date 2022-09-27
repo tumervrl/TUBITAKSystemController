@@ -13,9 +13,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.SignUpController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.SignUpController">
    <children>
       <MenuBar VBox.vgrow="NEVER">
          <menus>
@@ -58,7 +59,7 @@
       </MenuBar>
       <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <BorderPane prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: #FFFFFF;" styleClass="vbox_background_image" stylesheets="@background.css">
+            <BorderPane layoutX="-1.0" layoutY="-1.0" prefHeight="374.0" prefWidth="641.0" style="-fx-background-color: #FFFFFF;" styleClass="vbox_background_image" stylesheets="@background.css">
                <left>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                      <children>
@@ -67,7 +68,7 @@
                               <Image url="@../../../images/tubitak.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="36.0" layoutY="208.0" prefHeight="146.0" prefWidth="136.0" text="RAYLI ULAŞIM TEKNOLOJİLERİ ENSTİTÜSÜ" textAlignment="CENTER" textFill="RED" wrapText="true">
+                        <Label layoutX="36.0" layoutY="205.0" prefHeight="146.0" prefWidth="136.0" text="RAYLI ULAŞIM TEKNOLOJİLERİ ENSTİTÜSÜ" textAlignment="CENTER" wrapText="true">
                            <font>
                               <Font name="Bookshelf Symbol 7" size="16.0" />
                            </font>
@@ -90,7 +91,7 @@
                         </Label>
                         <TextField fx:id="username" layoutX="89.0" layoutY="139.0" promptText="username" />
                         <PasswordField fx:id="password" layoutX="89.0" layoutY="182.0" promptText="password" />
-                        <Button fx:id="buttonSignUp" layoutX="125.0" layoutY="237.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" text="SignUp" />
+                        <Button fx:id="buttonSignUp" layoutX="125.0" layoutY="237.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #1e0bff;" text="SignUp" textFill="WHITE" />
                         <Label fx:id="wrongLogIn" layoutX="113.0" layoutY="240.0" prefHeight="18.0" prefWidth="14.0" textFill="RED" />
                         <Button fx:id="buttonLogIn" layoutX="160.0" layoutY="321.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Log In" textFill="#0026ff" underline="true" />
                         <Label layoutX="98.0" layoutY="64.0" prefHeight="30.0" prefWidth="90.0" text="Sign Up" textAlignment="CENTER">
@@ -102,6 +103,9 @@
                      </children>
                   </AnchorPane>
                </right>
+               <center>
+                  <Line endX="-99.10712432861328" endY="236.09288024902344" startX="-100.0" BorderPane.alignment="CENTER" />
+               </center>
             </BorderPane>
          </children>
       </AnchorPane>

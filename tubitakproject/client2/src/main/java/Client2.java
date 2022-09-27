@@ -1,5 +1,4 @@
-import javafx.application.Application;
-import javafx.stage.Stage;
+
 import org.jgroups.JChannel;
 import org.jgroups.Message;
 import org.jgroups.ReceiverAdapter;
@@ -49,7 +48,7 @@ public class Client2 extends ReceiverAdapter {
     public void receive(Message msg) {
         System.out.println(msg.getSrc() + ": " + msg.getObject());
 
-        while(receive){
+/*        while(receive){
             try {
                 channel.send(null, user_name);
             } catch (Exception e) {
@@ -57,7 +56,7 @@ public class Client2 extends ReceiverAdapter {
             }
             receive=false;
 
-        }
+        }*/
 
 
     }

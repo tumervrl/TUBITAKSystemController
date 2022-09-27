@@ -46,9 +46,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.HelloController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.HelloController">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -91,7 +92,7 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <BorderPane prefHeight="400.0" prefWidth="640.0" styleClass="vbox_background_image" stylesheets="@background.css">
+            <BorderPane layoutX="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" styleClass="vbox_background_image" stylesheets="@background.css">
                <left>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                      <children>
@@ -100,12 +101,12 @@
                               <Image url="@../../../images/tubitak.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="36.0" layoutY="208.0" prefHeight="146.0" prefWidth="136.0" text="RAYLI ULAŞIM TEKNOLOJİLERİ ENSTİTÜSÜ" textAlignment="CENTER" textFill="RED" wrapText="true">
+                        <Label layoutX="28.0" layoutY="172.0" prefHeight="169.0" prefWidth="150.0" text="RAYLI ULAŞIM TEKNOLOJİLERİ ENSTİTÜSÜ" textAlignment="CENTER" wrapText="true">
                            <font>
-                              <Font name="Bookshelf Symbol 7" size="16.0" />
+                              <Font name="Calibri Bold" size="16.0" />
                            </font>
                         </Label>
-                        <Hyperlink fx:id="link" layoutX="44.0" layoutY="330.0" text="rute.tubitak.gov.tr" />
+                        <Hyperlink fx:id="link" layoutX="47.0" layoutY="330.0" text="rute.tubitak.gov.tr" />
                      </children>
                   </AnchorPane>
                </left>
@@ -129,19 +130,27 @@
                         </Label>
                         <TextField fx:id="username" layoutX="73.0" layoutY="162.0" promptText="username" />
                         <PasswordField fx:id="password" layoutX="73.0" layoutY="205.0" promptText="password" />
-                        <Button fx:id="loginButton" layoutX="36.0" layoutY="280.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="72.0" style="-fx-background-color: #1e0bff;" text="Log In" textFill="WHITE" />
+                        <Button fx:id="loginButton" layoutX="36.0" layoutY="280.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="65.0" style="-fx-background-color: #1e0bff;" text="Log In" textFill="WHITE" />
                         <Label fx:id="wrongLogIn" layoutX="113.0" layoutY="240.0" prefHeight="18.0" prefWidth="14.0" textFill="RED" />
-                        <Button fx:id="cancelButton" layoutX="148.0" layoutY="280.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="32.0" prefWidth="72.0" style="-fx-background-color: #1e0bff;" text="Cancel" textFill="WHITE" />
+                        <Button fx:id="cancelButton" layoutX="161.0" layoutY="280.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="32.0" prefWidth="65.0" style="-fx-background-color: #1e0bff;" text="Cancel" textFill="WHITE" />
                         <Label layoutX="82.0" layoutY="110.0" prefWidth="168.0" text="Secure Login" textAlignment="CENTER">
                            <font>
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                         <Button fx:id="buttonRegister" layoutX="124.0" layoutY="329.0" mnemonicParsing="false" style="-fx-background-color: #1e0bff;" text="Register" textFill="WHITE" underline="true" />
-                        <Label layoutX="39.0" layoutY="333.0" text="Not a user?" />
+                        <Label layoutX="36.0" layoutY="337.0" text="Not a user?" />
+                        <ImageView fitHeight="77.0" fitWidth="123.0" layoutX="-128.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/stb.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </AnchorPane>
                </right>
+               <center>
+                  <Line endX="-101.60002899169922" endY="258.31890869140625" startX="-101.60003662109375" startY="100.82600402832031" BorderPane.alignment="CENTER" />
+               </center>
             </BorderPane>
          </children>
     </AnchorPane>
